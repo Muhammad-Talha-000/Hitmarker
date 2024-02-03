@@ -1,0 +1,728 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+header{
+    position: relative;
+    background-color: #19191B;
+    display: grid;
+    height: 900px;
+    justify-content: space-around;
+}
+.image{
+    text-align: center;
+    cursor: pointer;
+}
+.nav{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16%;
+}
+.headerlist, .account{
+    display: flex;
+    gap: 20px;
+}
+.headerlist a, .account a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+.navtext:hover{
+    display: grid;
+    background-color: #FF6810;
+    text-align: center;
+    align-items: center;
+    height: 35px;
+    width: 105px;
+    border-radius: 2px;
+}
+.hamburger i{
+    display: none;
+}
+.navtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 105px;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+.headermain{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    margin-top: 110px;
+    font-family: "Circular Std";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.headertext{
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.064px;
+    width: 472px;
+    height: 79px;
+    line-height: 160%;
+}
+.headerflex{
+    display: flex;
+    margin: 35px 0;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.headerpic{
+    width: auto;
+    height: auto;
+    margin-bottom: 20%;
+}
+.viewjobs, .videos{
+    width: 190px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+.logo{
+    border-radius: 100%;
+    border-color: white;
+    color: white;
+    background-color: #19191B;
+    height: 42px;
+    width: 42px;
+}
+.viewjobs:hover, .videos:hover{
+    cursor: pointer;
+    text-align: center;
+    background-color: #FF6810;
+    border-radius: 4px;
+}
+.amazonpic{
+    width: auto;
+    height: 100px;
+    padding: 20px;
+    position: absolute;
+    bottom: -40px;
+    background: white;
+    border-radius: 12px;
+}
+.section1{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 180px 0;
+}
+.top{
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.h2{
+    color: #2E2E46;
+    font-family: "Circular Std";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+.h2text{
+    color: #2D314099;
+    font-family: "Circular Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.072px;
+}
+.frames{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.framesb{
+    display: none;
+}
+.frame{
+    display: grid;
+    gap: 40px;
+}
+.box{
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+    width: 330px;
+    height: 156px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: white;
+    box-shadow: 32px 49px 80px 0px rgba(125, 149, 169, 0.12);
+}
+.title{
+    color: #000;
+    font-family: "Circular Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: 0.072px;
+}
+.line{
+    width: 300.002px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.06);
+}
+.flexs{
+    display: flex;
+    gap: 12px;
+}
+.name{
+    color: #000;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: 0.064px;
+}
+.country{
+    color: #828282;
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 19.2px */
+    letter-spacing: 0.048px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1070px;
+    height: 109px;
+    padding: 20px;
+    background: #FF6810;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(8, 46, 78, 0.25) inset, 0px -6px 8px 0px rgba(12, 65, 109, 0.08) inset;
+}
+.bottomtext{
+    display: grid;
+    gap: 10px;
+}
+.bottomheading{
+    color: white;
+    text-align: start;
+    font-family: "Circular Std";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112%; /* 26.88px */
+}
+.lowertext{
+    color: white;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: 0.064px;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 15%;
+}
+.sec2text{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.titlediv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 26%;
+    width: 550px;
+    margin-left: 40px;
+}
+.textdiv{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    width: 700px;
+    height: 270px;
+    border: 1px solid rgba(118, 129, 146, 0.10);
+    border-left: 13px solid #FF6810;
+    background: #FFF;
+    padding: 40px;
+}
+.sec2pic{
+    position: relative;
+    width: 401px;
+    height: 486.472px;
+}
+.black{
+    position: absolute ;
+    bottom: 0;
+    width: 401px;
+    height: 430px;
+    flex-shrink: 0;
+    background-color: black;
+}
+.corner{
+    position: absolute;
+    right: 30px;
+    width: 90px;
+    height: 89.902px;
+}
+.mainpic{
+    position: absolute;
+    width: 290px;
+    height: 300px;
+}
+.sec2heading{
+    color: #2E2E46;
+    font-family: "Circular Std";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+}
+.sec2arrow{
+    display: flex;
+    position: absolute;
+    right: 0;
+    gap: 10px;
+}
+.arrows{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 50.424px;
+    height: 51.944px;
+    border-radius: 100%;
+    background-color: #FF74681F;
+    color: #FF6810;
+}
+.arrows:hover{
+    background-color: #FF6810;
+    color: white;
+    cursor: pointer;
+}
+.child1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.child2{
+    color: #222831E5;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 30px 0;
+}
+.nameetc{
+    display: grid;
+    gap: 10px;
+}
+.user{
+    color: #2E2E46;
+    font-family: "Circular Std";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+}
+.dots{
+    position: absolute;
+    bottom: -26%;
+    left: -34%;
+    z-index: -1;
+}
+footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px;
+}
+.innerfooter{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.information, .information1{
+    display: grid;
+    gap: 20px;
+}
+.footertext{
+    width: 232px;
+    height: 43px;
+    color: rgba(46, 46, 70, 0.80);
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+.footerheading{
+    color: #2E2E46;
+    font-family: "Circular Std";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footergrid{
+    display: grid;
+    gap: 10px;
+}
+.playstore{
+    width: 235.999px;
+    height: 39.73px;
+}
+button{
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    border: solid 1.5px;
+    border-radius: 100%;
+    border-color: #FF6810;
+    color: #FF6810;
+    background-color: white;
+}
+button:hover{
+    background-color: #FF6810;
+    color: white;
+    cursor: pointer;
+}
+.footerline{
+    margin-top: 80px;
+    width: auto;
+    height: 1px;
+    background: rgba(105, 120, 131, 0.40);
+}
+.endtext{
+    color: rgba(46, 46, 70, 0.80);
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.064px;
+}
+.forpic{
+    width: auto;
+}
+.footerfont{
+    color: #222831;
+    font-family: "Airbnb Cereal App";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1220px) {
+    header{
+        height: auto;
+        width: auto;
+    }
+    .nav{
+        justify-content: end;
+        gap: 8%;
+        padding-left: 20px;
+    }
+    .headermain{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text{
+        text-align: center;
+        height: auto;
+        width: auto;
+    }
+    .headerpic{
+        margin-bottom: 0;
+    }
+    .headertext{
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 0 100px;
+    }
+    .headerflex{
+        justify-content: center;
+    }
+    .amazonpic{
+        display: none;
+    }
+    .frames{
+        gap: 5px;
+    }
+    .frame{
+        gap: 10px;
+    }
+    .bottom{
+        width: auto;
+        height: auto;
+        margin: 0 10px;
+    }
+    .section1{
+        margin: 150px 0;
+    }
+}
+@media screen and (max-width: 1080px){
+    .section2{
+        gap: 0;
+    }
+    .textdiv{
+        height: auto;
+        width: 630px;
+    }
+    .dots{
+        left: -20%;
+    }
+    .innerfooter{
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 1010px){
+    .nav{
+        gap: 50px;
+    }
+    .section2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .textdiv{
+        position: relative;
+    }
+    .dots{
+        display: none;
+    }
+    .innerfooter{
+        justify-content: center;
+    }
+    .frames{
+        display: none;
+    }
+    .frame{
+        display: none;
+    }
+    .framesb{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .framea, .frameb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 925px){
+    .nav{
+        gap: 10px;
+        justify-content: center;
+    }
+    .headerlist{
+        gap: 0;
+    }
+    .footergrid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerline{
+        margin-top: 50px;
+    }
+    .innerfooter{
+        display: grid;
+    }
+    .information{
+        display: flex;
+    }
+    .footerheading{
+        text-align: center;
+    }
+    .buttondiv{
+        text-align: center;
+    }
+    .information1{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav{
+        justify-content: space-around;
+    }
+    .hamburger i{
+        height: 30px;
+        width: 30px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .headerlist, .account{
+        display: none;
+    }
+    .hamburger i:hover{
+        background-color: #FF6810;
+    }
+}
+@media screen and (max-width: 740px) {
+    .framea, .framesb{
+        gap: 20px;
+    }
+    .headertext{
+        padding: 0 60px;
+    }
+    .section1{
+        margin: 100px 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    .framea, .framesb{
+        display: grid;
+        gap: 20px;
+    }
+    .headerpic{
+        width: 100%;
+        padding: 10px;
+    }
+    .titlediv, .textdiv{
+        width: 95%;
+        margin: 20px;
+    }
+    .heading{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .headerflex{
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+    }
+    .heading{
+        font-size: 44px;
+    }
+    .headertext{
+        padding: 0 40px;
+    }
+    .titlediv{
+        flex-direction: column;
+    }
+    .sec2arrow{
+        position: relative;
+    }
+    .box{
+        height: auto;
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 440px){
+    .black{
+        width: 300px;
+        height: 310px;
+    }
+    .sec2pic{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 373px;
+        padding: 10px;
+    }
+    .footergrid{
+        display: none;
+    }
+    .footertext{
+        display: none;
+    }
+    .information{
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 280px;
+    }
+    .sec2heading{
+        font-size: 36px;
+    }
+    .nameetc{
+        text-align: center;
+    }
+    .child1{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footerline{
+        margin-top: 10px;
+    }
+    .line{
+        width: 250px;
+    }
+    footer{
+        padding: 20px;
+    }
+    .mainpic{
+        display: auto;  
+    }
+    .forpic{
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: Circular Std;
+    src: url(fonts/CircularStd-Medium.ttf);
+  }
+@font-face {
+    font-family: Airbnb Cereal App;
+    src: url(fonts/AirbnbCereal_W_Md.otf);
+  }
